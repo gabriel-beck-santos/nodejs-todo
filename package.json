@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-todo-terminal",
+  "version": "1.0.0",
+  "description": "A simple terminal todo list build with Nodejs",
+  "main": "app.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-beck-santos/nodejs-todo-terminal.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "todo"
+  ],
+  "author": "Gabriel Beck dos Santos <gabriel.beck.santos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabriel-beck-santos/nodejs-todo-terminal/issues"
+  },
+  "homepage": "https://github.com/gabriel-beck-santos/nodejs-todo-terminal#readme",
+  "husky": {
+    "hooks": {
+      "pre-push": "npm lint && npm test"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.15.0-rc.3"
+  }
+}
